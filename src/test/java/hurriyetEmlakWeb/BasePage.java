@@ -14,10 +14,12 @@ public class BasePage {
 
     protected WebDriver driver;
     protected WebDriverWait wait;
+    protected Constant constant;
 
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
+        this.constant = new Constant();
         wait = new WebDriverWait(driver, 20);
 
     }
