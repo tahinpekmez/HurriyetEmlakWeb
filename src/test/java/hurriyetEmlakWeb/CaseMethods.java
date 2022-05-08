@@ -26,7 +26,7 @@ public class CaseMethods extends BasePage{
         driver.get(constant.getProperty("homePage"));
         waitPageLoad();
 
-        if(driver.getCurrentUrl().equals(constant.getProperty("homePage"))){
+            if(driver.getCurrentUrl().equals(constant.getProperty("homePage"))){
             Assert.assertTrue(true);
         }
 
